@@ -5,7 +5,6 @@
 	intact = 0
 	density = 1
 	opacity = 1
-/*lonestar edit. don't need space. so dont initialize it.
 	initial_temperature = TCMB
 	thermal_conductivity = 0
 	heat_capacity = 700000
@@ -20,7 +19,7 @@
 	light_power = 0.25
 	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
 	bullet_bounce_sound = null
-*/
+
 /turf/open/space/basic/New()	//Do not convert to Initialize
 	//This is used to optimize the map loader
 	return
@@ -28,7 +27,7 @@
 /turf/open/space/examine() //nothing, nowhere
 	return
 
-/*
+
 /turf/open/space/Initialize()
 	..()
 	return
@@ -99,10 +98,10 @@
 
 /turf/open/space/attack_paw(mob/user)
 	return attack_hand(user)
-*/
+
 /turf/open/space/proc/CanBuildHere()
 	return TRUE
-/*
+
 /turf/open/space/handle_slip(mob/living/carbon/C, knockdown_amount, obj/O, lube)
 	if(lube & FLYING_DOESNT_HELP)
 		return ..()
@@ -306,6 +305,7 @@
 	icon_state = "transparent"
 	baseturfs = /turf/open/space/transparent/openspace
 	CanAtmosPassVertical = ATMOS_PASS_YES
+	sunlight_state = 1
 	//mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 
 ///No bottom level for openspace.
@@ -352,4 +352,4 @@
 				return FALSE
 		return TRUE
 	return FALSE
-*/
+
